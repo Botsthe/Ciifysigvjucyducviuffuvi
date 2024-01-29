@@ -185,6 +185,12 @@ sᴛᴇᴘ 𝟹 : ꜰᴏʟʟᴏᴡ ᴛʜᴇsᴇ <a href=https://t.me/TG_UPDATES1
 Any Doubts or Not Connecting? Contact Me </b>
 """
 
+    HUMAN_TXT = """<b>⚡ Gʀᴏᴜᴘ & ᴄʜᴀɴɴᴇʟs & ɪɴғᴏ ⚡
+■ ᴀʟʟ ɴᴇᴡ Mᴏᴠɪᴇ & sᴇʀɪᴇs.
+■ ғᴀsᴛᴇsᴛ ʙᴏᴛs ᴀʀᴇ ᴀᴅᴅᴇᴅ
+■ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.
+■ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.</b>"""
+    
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
 
