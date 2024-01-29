@@ -1357,8 +1357,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('♻️ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ ♻️', callback_data='coct'), 
              InlineKeyboardButton('❤‍🔥 ᴇᴀʀɴ ᴍᴏɴᴇʏ ❤‍🔥', callback_data='shortlink_info') 
          ], [ 
-             InlineKeyboardButton('🪩 FILTERS 🪩', callback_data='filters'), 
-             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+             InlineKeyboardButton('• ʀᴜʟᴇꜱ •', callback_data='rule'),
+             InlineKeyboardButton('• source •', callback_data='source')
+         ], [
+            InlineKeyboardButton('🪩 FILTERS 🪩', callback_data='filters'), 
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1789,10 +1792,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        
+    elif query.data == "rule":
+            buttons = [[
+                    InlineKeyboardButton("⇋ ʙᴀᴄᴋ ⇋", callback_data="help")
+                  ]]
+            await client.edit_message_media(
+                query.message.chat.id, 
+                query.message.id, 
+                InputMediaPhoto(random.choice(PICS))
+            )
+            reply_markup = InlineKeyboardMarkup(buttons)
+            await query.message.edit_text(
+                text=(script.RULE_TXT),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('About', callback_data='about')
+            InlineKeyboardButton('source', callback_data='hrlp')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
