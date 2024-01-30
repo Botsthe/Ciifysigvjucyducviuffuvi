@@ -2058,21 +2058,35 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "paid":
-        buttons = [[
-            InlineKeyboardButton('♛┈⛧┈┈•𝐁𝐀𝐂𝐊•┈┈⛧┈♛', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.PAID_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+    elif query.data == "shortlink_info":
+            btn = [[
+                InlineKeyboardButton("👇Select Your Language 👇", callback_data="laninfo")
+        ], [
+            InlineKeyboardButton("Tamil", callback_data="tamil_info"),
+            InlineKeyboardButton("English", callback_data="english_info"),
+            InlineKeyboardButton("Hindi", callback_data="hindi_info")
+        ], [
+            InlineKeyboardButton("Malayalam", callback_data="malayalam_info"),
+            InlineKeyboardButton("Urdu", callback_data="urdu_info"),
+            InlineKeyboardButton("Bangla", callback_data="bangladesh_info")
+        ], [
+            InlineKeyboardButton("Telugu", callback_data="telugu_info"),
+            InlineKeyboardButton("Kannada", callback_data="kannada_info"),
+            InlineKeyboardButton("Gujarati", callback_data="gujarati_info"),
+            InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+
+            ]]
+            await client.edit_message_media(
+                query.message.chat.id, 
+                query.message.id, 
+                InputMediaPhoto(random.choice(PICS))
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.SHORTLINK_INFO),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
