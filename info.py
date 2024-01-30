@@ -43,7 +43,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ranjuvishwakarma50:aman@cluster0.dngcdwl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ranjuvishwakarma50:aman@cluster0.wujkscn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -96,8 +96,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://vifhb.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://vifhb.onrender.com".format(FQDN, PORT)
+URL = "https://git.heroku.com/amanav.git".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://git.heroku.com/amanav.git".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -112,9 +112,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://vifhb.onrender.com".format(FQDN)
+    URL = "https://git.heroku.com/amanav.git".format(FQDN)
 else:
-    URL = "https://vifhb.onrender.com".format(FQDN)
+    URL = "https://git.heroku.com/amanav.git".format(FQDN)
 
 
 
