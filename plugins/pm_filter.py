@@ -1293,7 +1293,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🦋 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🦋', callback_data="shortlink_info"),
                     InlineKeyboardButton('✨ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ✨', callback_data='munnubhai')
                 ],[
-                    InlineKeyboardButton('👻 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('👻 ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ', callback_data='help'),
                     InlineKeyboardButton('👾 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('💰 Eᴀʀɴ Mᴏɴᴇʏ 💰', callback_data='check')
@@ -1356,17 +1356,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('GROUPCMDS', callback_data='GROUPCMDS'),
              InlineKeyboardButton('USERCMDS', callback_data='USERCMDS')
          ], [
-             InlineKeyboardButton('📁 ꜰɪʟᴇ ꜱᴛᴏʀᴇ 📁', callback_data='store_file'),   
-             InlineKeyboardButton('💠 ᴛᴇʟᴇɢʀᴀᴘʜ 💠', callback_data='tele') 
-         ], [ 
-             InlineKeyboardButton('♻️ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ ♻️', callback_data='coct'), 
-             InlineKeyboardButton('❤‍🔥 ᴇᴀʀɴ ᴍᴏɴᴇʏ ❤‍🔥', callback_data='ranju') 
-         ], [ 
              InlineKeyboardButton('• ʀᴜʟᴇꜱ •', callback_data='rule'),
-             InlineKeyboardButton('• source •', callback_data='source')
+             InlineKeyboardButton('• source •', callback_data='source') 
+         ], [ 
+             InlineKeyboardButton('❤‍🔥 ᴇᴀʀɴ ᴍᴏɴᴇʏ ❤‍🔥', callback_data='ranju')
          ], [
-            InlineKeyboardButton('🪩 FILTERS 🪩', callback_data='filters'), 
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
