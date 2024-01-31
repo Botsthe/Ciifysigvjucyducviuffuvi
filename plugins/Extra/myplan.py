@@ -1,4 +1,3 @@
-import os import environ
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram.types import ReplyKeyboardMarkup, KeyboardButton
 from pyrogram import Client , filters
@@ -6,8 +5,6 @@ from pyrogram import types
 from pyrogram.types import Update, Message
 from telegram.ext import CallbackContext
 from datetime import datetime, timedelta
-from info import PREMIUM_USER
-
 
 # Define your global variables to store user IDs based on plans
 trial_users = set()
@@ -15,9 +12,6 @@ gold_users = set()
 bronze_users = set()
 diamond_users = set()
 
-# Make VANSH_PREMIUM global
-global PREMIUM_USER
-PREMIUM_USER = set(int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split())
 
 
 @Client.on_message(filters.private & filters.command(["addpremium"]))
@@ -60,13 +54,6 @@ async def addpremium(client, message, **kwargs):
     else:
         await message.reply_text('Invalid plan. Supported plans are TRIAL, GOLD, BRONZE, DIAMOND.')
         return
-
-    # Update the combined list only with new user IDs
-    new_user_ids = user_ids - PREMIUM_USER
-    PREMIUM_USER.update(new_user_ids)
-
-    # Format new_user_ids for the confirmation message
-    formatted_user_ids = " ".join(f"'{user_id}'" for user_id in new_user_ids)
 
     
 
@@ -112,7 +99,7 @@ async def myplan(client, message):
 
 # Set up the Telegram bot
 # YOUR_BOT_TOKEN = 'your_bot_token'
-YOUR_ADMIN_IDS = [2020224264]  # Replace with your admin IDs
+YOUR_ADMIN_IDS = [5977931010]  # Replace with your admin IDs
 
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
@@ -254,3 +241,4 @@ async def premium_users(client, message):
     # Send the premium users message as a direct message to the admin
     admin_id = message.from_user.id
     await client.send_message(chat_id=admin_id, text=premium_users_message)
+    
