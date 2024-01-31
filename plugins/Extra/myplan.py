@@ -111,7 +111,7 @@ async def myplan(client, message):
 
 # Set up the Telegram bot
 # YOUR_BOT_TOKEN = 'your_bot_token'
-YOUR_ADMIN_IDS = [2020224264]  # Replace with your admin IDs
+YOUR_ADMIN_IDS = [5977931010]  # Replace with your admin IDs
 
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
