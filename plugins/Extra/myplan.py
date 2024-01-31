@@ -4,7 +4,6 @@ from pyrogram.types import ReplyKeyboardMarkup, KeyboardButton
 from pyrogram import Client , filters
 from pyrogram import types
 from pyrogram.types import Update, Message
-from telegram.ext import CallbackContext
 from datetime import datetime, timedelta
 from info import PREMIUM_USER
 
