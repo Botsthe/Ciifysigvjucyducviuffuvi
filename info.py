@@ -117,7 +117,7 @@ else:
     URL = "https://vkbj-mbcz.onrender.com/".format(FQDN)
 
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002110971750'))
-
+PREMIUM_USER ()
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
