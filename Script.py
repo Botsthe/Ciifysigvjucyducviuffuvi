@@ -10,7 +10,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.
  
     ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Movie_000_bot>YD Aᴜᴛᴏ Bᴏᴛ™</a>
-‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Movie_000_bot>YD Aᴜᴛᴏ Bᴏᴛ™</a>
+‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Movie_080_bot>YD Aᴜᴛᴏ Bᴏᴛ³™</a>
  ‣ My best friend : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Latestmoviesupdates0'>UPDATES</a> 
  ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
