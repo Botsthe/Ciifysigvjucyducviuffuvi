@@ -19,7 +19,7 @@ global PREMIUM_USER
 # PREMIUM_USER = set(int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split())
 
 
-@Client.on_message(filters.command("add_premium") & filters.user(ADMINS))
+@Client.on_message(filters.command("add_premium") & YOUR_ADMIN_IDS = [5977931010]
 async def give_premium_cmd_handler(client, message):
     if len(message.command) == 4:
         time_zone = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
