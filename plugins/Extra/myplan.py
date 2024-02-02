@@ -71,13 +71,6 @@ async def addpremium(client, message, **kwargs):
 
     # Send a confirmation message
     await message.reply_text(f'Successfully added {plan} plan for user {user_id}.')
-
-    else
-         await message.reply_text("Invalid time format. Please use '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year'")
-    else
-         await message.reply_text("Usage : /add_premium user_id time (e.g., '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year')")
-
-
 @Client.on_message(filters.private & filters.command(["myplan"]))
 async def myplan(client, message):
     user_id = message.from_user.id
