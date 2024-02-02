@@ -116,6 +116,7 @@ if HAS_SSL:
 else:
     URL = "https://vkbj-mbcz.onrender.com/".format(FQDN)
 
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002110971750'))
 
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
