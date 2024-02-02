@@ -613,6 +613,8 @@ async def verify_user(bot, userid, token):
     today = date.today()
     VERIFIED[user.id] = str(today)
 
+async def get_seconds(time_string):
+        return 0
 async def check_verification(bot, userid):
     user = await bot.get_users(userid)
     if not await db.is_user_exist(user.id):
